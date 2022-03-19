@@ -1,3 +1,13 @@
+/* global variables */
+:root {
+	--very-dark-blue: hsl(243, 87%, 12%);
+	--desaturated-blue: hsl(238, 22%, 44%);
+	--bright-blue: hsl(224, 93%, 58%);
+	--moderate-cyan: hsl(170, 45%, 43%);
+	--light-grayish-blue: hsl(240, 75%, 98%);
+	--light-gray: hsl(0, 0%, 75%);
+}
+
 /* visually hidden */
 .sr-only {
 	position: absolute;
@@ -7,6 +17,52 @@
 	height: 1px;
 	overflow: hidden;
 }
+/* global styles */
+* {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* Typography */
+html {
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+}
+h2,
+button,
+nav {
+	font-family: "Raleway", sans-serif;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* section styles */
+
+header {
+	padding: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .logo {
+	width: 5rem;
+}
+
+nav.primary {
+	font-size: 0.75rem;
+}
+nav.primary a {
+	text-decoration: none;
+	padding-left: 1.5rem;
+}
+
 /* attribution styles */
 .attribution {
 	font-size: 11px;

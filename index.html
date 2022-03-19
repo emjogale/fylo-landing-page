@@ -13,6 +13,12 @@
 		/>
 
 		<title>Frontend Mentor | Fylo landing page with two column layout</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
@@ -20,21 +26,23 @@
 		<header>
 			<h1 class="sr-only">Fylo file storage</h1>
 			<div class="logo"><img src="./images/logo.svg" alt="Fylo logo" /></div>
+
+			<nav class="primary">
+				<ul>
+					<li>
+						<a href="">Features</a><a href="">Team </a><a href="">Sign In</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
-		<nav>
-			<ul>
-				<li>
-					<a href="">Features</a><a href="">Team </a><a href="">Sign In</a>
-				</li>
-			</ul>
-		</nav>
 		<main class="container">
-			<section class="location">
-				<img-container
-					><img
+			<section class="hero">
+				<div class="img-container">
+					<img
 						src="./images/illustration-1.svg"
 						alt="people with lots of files"
-				/></img-container>
+					/>
+				</div>
 				<div class="text-container">
 					<div class="text-content">
 						<h2>All your files in one secure location, accessible anywhere.</h2>
@@ -52,7 +60,7 @@
 
 			<section class="testimonial">
 				<div class="img-container">
-					<img- src="./images/illustration-2.svg" alt="people sharing files" />
+					<img src="./images/illustration-2.svg" alt="people sharing files" />
 				</div>
 				<div class="text-container">
 					<div class="text-content">
@@ -87,7 +95,7 @@
 					</blockquote>
 				</div>
 			</section>
-			<section class="early-access">
+			<section class="cta">
 				<h2>Get early access today</h2>
 				<p>
 					It only takes a minute to sign up and our free starter tier is
