@@ -134,8 +134,8 @@ p.error {
 /* testimonial section styles */
 section.testimonial {
 	margin: 7.5rem 0;
-	background-color: var(--light-grayish-blue);
-
+	background-color: var(--light-gray);
+}
 .testimonial .img-container {
 	padding: 4rem 0;
 }
@@ -162,6 +162,29 @@ p.productivity {
 
 .arrow {
 	padding-left: 0.5rem;
+}
+
+blockquote {
+	border: 1px solid black;
+	background-color: white;
+	margin: 2rem 1rem;
+	padding: 1.5rem 1.3rem 2rem 1.5rem;
+	text-align: left;
+	line-height: 18px;
+}
+
+.quote {
+	font-size: 0.625rem;
+}
+
+.author {
+	display: flex;
+}
+
+.author img {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
 }
 
 /* attribution styles */
