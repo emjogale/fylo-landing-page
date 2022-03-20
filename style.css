@@ -1,7 +1,7 @@
 /* global variables */
 :root {
 	--very-dark-blue: hsl(243, 87%, 12%);
-	--desaturated-blue: #585989;
+	--desaturated-blue: hsl(239, 22%, 44%);
 	--different-blue: hsl(243, 14%, 43%);
 	--bright-blue: hsl(224, 93%, 58%);
 	--moderate-cyan: hsl(170, 45%, 43%);
@@ -229,6 +229,11 @@ blockquote {
 	margin-bottom: 0.5rem;
 }
 
+/* footer styles */
+footer {
+	color: white;
+	background-color: var(--very-dark-blue);
+}
 /* attribution styles */
 .attribution {
 	font-size: 11px;
