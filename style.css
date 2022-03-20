@@ -2,6 +2,7 @@
 :root {
 	--very-dark-blue: hsl(243, 87%, 12%);
 	--desaturated-blue: hsl(238, 22%, 44%);
+	--different-blue: hsl(243, 14%, 43%);
 	--bright-blue: hsl(224, 93%, 58%);
 	--moderate-cyan: hsl(170, 45%, 43%);
 	--light-grayish-blue: hsl(240, 75%, 98%);
@@ -28,6 +29,11 @@
 	box-sizing: inherit;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 /* Typography */
 html {
 	font-size: 16px;
@@ -36,15 +42,21 @@ html {
 }
 
 button,
-nav {
+nav,
+h3 {
 	font-family: "Raleway", sans-serif;
 }
 h2 {
 	font-weight: 700;
 }
-img {
-	max-width: 100%;
-	height: auto;
+
+h3 {
+	font-weight: 700;
+}
+
+a {
+	font-size: 0.75rem;
+	text-decoration: none;
 }
 
 /* section styles */
@@ -63,11 +75,7 @@ header .logo {
 	width: 5rem;
 }
 
-nav.primary {
-	font-size: 0.75rem;
-}
 nav.primary a {
-	text-decoration: none;
 	padding-left: 1.5rem;
 }
 /* main section styles */
@@ -122,6 +130,40 @@ p.error {
 	text-align: left;
 	color: red;
 }
+
+/* testimonial section styles */
+section.testimonial {
+	margin: 7.5rem 0;
+	background-color: var(--light-grayish-blue);
+
+.testimonial .img-container {
+	padding: 4rem 0;
+}
+
+.testimonial h3 {
+	padding: 1.5rem 0;
+}
+
+p.productivity {
+	color: var(--desaturated-blue);
+	font-size: 0.875rem;
+	line-height: 21px;
+	padding-bottom: 1rem;
+}
+
+.testimonial a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--moderate-cyan);
+	padding-bottom: 0.25rem;
+	border-bottom: 1px solid;
+}
+
+.arrow {
+	padding-left: 0.5rem;
+}
+
 /* attribution styles */
 .attribution {
 	font-size: 11px;
