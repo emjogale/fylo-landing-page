@@ -59,6 +59,11 @@ a {
 	text-decoration: none;
 }
 
+p {
+	font-size: 0.88rem;
+	line-height: 21px;
+}
+
 /* section styles */
 body {
 	min-height: 100vh;
@@ -80,7 +85,7 @@ nav.primary a {
 }
 /* main section styles */
 main {
-	padding: 2rem 1.75rem;
+	/* padding: 2rem 1.75rem; */
 
 	text-align: center;
 }
@@ -98,14 +103,10 @@ main {
 	line-height: 1.5;
 }
 
-.hero p {
-	line-height: 21px;
-	font-size: 0.9rem;
-}
-
 input,
 button {
 	width: 87%;
+	margin: 0 auto;
 	padding: 0.7rem;
 }
 
@@ -150,8 +151,7 @@ section.testimonial {
 
 p.productivity {
 	color: var(--desaturated-blue);
-	font-size: 0.875rem;
-	line-height: 21px;
+
 	padding-bottom: 1rem;
 }
 
@@ -170,7 +170,7 @@ p.productivity {
 
 blockquote {
 	background-color: white;
-	margin: 2rem 1rem;
+	margin: 2rem 3rem;
 	padding: 1.5rem 1.3rem 2rem 1.3rem;
 	text-align: left;
 	line-height: 18px;
@@ -205,7 +205,15 @@ blockquote {
 .cta {
 	color: white;
 	background-color: var(--desaturated-blue);
-	padding: 3rem;
+	padding: 3rem 3rem 4rem 3rem;
+}
+
+.cta h3 {
+	padding: 0.4rem 0;
+	font-size: 1.125rem;
+}
+
+.cta p {
 }
 
 /* attribution styles */
