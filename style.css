@@ -20,8 +20,8 @@
 /* global styles */
 * {
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
@@ -32,11 +32,15 @@
 html {
 	font-size: 16px;
 	font-family: "Open Sans", sans-serif;
+	color: var(--very-dark-blue);
 }
-h2,
+
 button,
 nav {
 	font-family: "Raleway", sans-serif;
+}
+h2 {
+	font-weight: 700;
 }
 img {
 	max-width: 100%;
@@ -68,8 +72,8 @@ nav.primary a {
 }
 /* main section styles */
 main {
-	padding: 2.15rem;
-	margin-top: 2.5rem;
+	margin: 2rem 1.75rem;
+
 	text-align: center;
 }
 
@@ -81,9 +85,8 @@ main {
 
 .hero h2 {
 	font-size: 1.5rem;
-	font-weight: 700;
+	font-weight: bold;
 	padding: 1.5rem 0;
-
 	line-height: 1.5;
 }
 
@@ -92,9 +95,32 @@ main {
 	font-size: 0.9rem;
 }
 
-.hero input,
-.hero button {
-	width: 100%;
+input,
+button {
+	width: 87%;
+	padding: 0.7rem;
+}
+
+button {
+	color: white;
+	background-color: var(--bright-blue);
+	border: 2px solid var(--bright-blue);
+	outline: none;
+}
+/* location section styles */
+h2.location {
+	font-weight: 700;
+}
+p.location {
+	padding: 0.5rem 0.5rem 1rem 0.5rem;
+}
+
+/* email form styles */
+p.error {
+	font-size: 0.75rem;
+	padding-left: 1.8%;
+	text-align: left;
+	color: red;
 }
 /* attribution styles */
 .attribution {

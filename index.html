@@ -16,7 +16,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="reset.css" />
@@ -45,15 +45,19 @@
 				</div>
 				<div class="text-container">
 					<div class="text-content">
-						<h2>All your files in one secure location, accessible anywhere.</h2>
-						<p>
+						<h2 class="location">
+							All your files in one secure location, accessible anywhere.
+						</h2>
+						<p class="location">
 							Fylo stores your most important files in one secure location.
 							Access them wherever you need, share and collaborate with friends,
 							family, and co-workers.
 						</p>
 					</div>
 					<form>
-						<input type="text" /><button type="submit">Get Started</button>
+						<input type="text" id="email" />
+						<p class="error">Please check your email</p>
+						<button id="button-email" class="button">Get Started</button>
 					</form>
 				</div>
 			</section>
@@ -75,8 +79,7 @@
 						</p>
 					</div>
 					<a href=""
-						>See how Fylo works
-						<img src="./images/icon-arrow.svg" alt="arrow icon"
+						>See how Fylo works <img src="./images/icon-arrow.svg" alt="arrow"
 					/></a>
 					<blockquote>
 						<img src="./images/icon-quotes.svg" alt="quotemarks" />
@@ -104,15 +107,15 @@
 				</p>
 				<form action>
 					<input type="text" />
-					<button>Get Started For Free</button>
+					<button id="button-cta" class="button">Get Started For Free</button>
 				</form>
 			</section>
 		</main>
 		<footer>
-			<div class="logo"><img src="./images/logo.svg" alt="Fylo logo" /></div>
+			<div class="logo"><img src="./images/logo.svg" alt="" /></div>
 			<div class="contact">
 				<div class="phone">
-					<img src="./images/icon-phone.svg" alt="phone icon" />
+					<img src="./images/icon-phone.svg" alt="" />
 					<p>Phone: +1-543-123-4567</p>
 				</div>
 				<div class="email">
