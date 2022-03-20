@@ -1,7 +1,7 @@
 /* global variables */
 :root {
 	--very-dark-blue: hsl(243, 87%, 12%);
-	--desaturated-blue: hsl(238, 22%, 44%);
+	--desaturated-blue: #585989;
 	--different-blue: hsl(243, 14%, 43%);
 	--bright-blue: hsl(224, 93%, 58%);
 	--moderate-cyan: hsl(170, 45%, 43%);
@@ -80,7 +80,7 @@ nav.primary a {
 }
 /* main section styles */
 main {
-	margin: 2rem 1.75rem;
+	padding: 2rem 1.75rem;
 
 	text-align: center;
 }
@@ -133,8 +133,8 @@ p.error {
 
 /* testimonial section styles */
 section.testimonial {
-	margin: 7.5rem 0;
-	background-color: var(--light-gray);
+	margin-top: 7.5rem;
+	background-color: var(--light-grayish-blue);
 }
 .testimonial .img-container {
 	padding: 4rem 0;
@@ -142,6 +142,10 @@ section.testimonial {
 
 .testimonial h3 {
 	padding: 1.5rem 0;
+}
+
+.see-how {
+	padding-top: 1rem;
 }
 
 p.productivity {
@@ -165,26 +169,43 @@ p.productivity {
 }
 
 blockquote {
-	border: 1px solid black;
 	background-color: white;
 	margin: 2rem 1rem;
-	padding: 1.5rem 1.3rem 2rem 1.5rem;
+	padding: 1.5rem 1.3rem 2rem 1.3rem;
 	text-align: left;
 	line-height: 18px;
 }
 
 .quote {
 	font-size: 0.625rem;
+	padding-bottom: 1rem;
 }
 
 .author {
 	display: flex;
+	justify-content: left;
+	align-items: center;
+	gap: 1rem;
 }
 
+.author-name h2 {
+	font-size: 9px;
+	line-height: 12px;
+}
+.author-name p {
+	font-size: 6px;
+	line-height: 11.5px;
+}
 .author img {
 	width: 24px;
 	height: 24px;
 	border-radius: 50%;
+}
+
+.cta {
+	color: white;
+	background-color: var(--desaturated-blue);
+	padding: 3rem;
 }
 
 /* attribution styles */
