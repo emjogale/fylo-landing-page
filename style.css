@@ -42,6 +42,7 @@ html {
 }
 
 button,
+input,
 nav,
 h3 {
 	font-family: "Raleway", sans-serif;
@@ -134,8 +135,8 @@ p.error {
 
 /* testimonial section styles */
 section.testimonial {
-	margin-top: 7.5rem;
-	background-color: var(--light-grayish-blue);
+	padding-top: 7.5rem;
+	background-image: url(./images/bg-curve-mobile.svg) no-repeat;
 }
 .testimonial .img-container {
 	padding: 4rem 0;
@@ -205,7 +206,7 @@ blockquote {
 .cta {
 	color: white;
 	background-color: var(--desaturated-blue);
-	padding: 3rem 3rem 4rem 3rem;
+	padding: 3rem 3.2rem 4.5rem 3rem;
 }
 
 .cta h3 {
@@ -214,6 +215,18 @@ blockquote {
 }
 
 .cta p {
+	padding-bottom: 2rem;
+}
+
+.cta input,
+.cta button {
+	width: 70%;
+	padding: 0.47rem;
+	font-size: 0.65rem;
+}
+
+.cta input {
+	margin-bottom: 0.5rem;
 }
 
 /* attribution styles */
